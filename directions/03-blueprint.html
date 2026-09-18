@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ScoreLift · Direction 3 · Blueprint</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet" />
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0d1b2a; color: #e0e7ef; font-family: 'Space Grotesk', sans-serif; }
+
+.hero { max-width: 1280px; margin: 0 auto; padding: 40px; position: relative; overflow: hidden; }
+.hero::after { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(0deg, transparent, transparent 29px, rgba(65,135,225,0.04) 29px, rgba(65,135,225,0.04) 30px); pointer-events: none; }
+
+.grid-lines { position: absolute; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none; }
+.grid-lines::before { content: ''; position: absolute; left: 10%; top: 0; bottom: 0; width: 1px; background: linear-gradient(to bottom, transparent, rgba(65,135,225,0.15), transparent); }
+.grid-lines::after { content: ''; position: absolute; right: 20%; top: 0; bottom: 0; width: 1px; background: linear-gradient(to bottom, transparent, rgba(65,135,225,0.1), transparent); }
+
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 80px; position: relative; z-index: 1; }
+.logo { font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+.logo span { color: #4187e1; }
+.nav { display: flex; gap: 28px; font-family: 'Space Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: #6a8bae; }
+.nav a { color: inherit; text-decoration: none; }
+.nav a:hover { color: #4187e1; }
+
+.content { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 60px; align-items: center; position: relative; z-index: 1; }
+.text h1 { font-family: 'Space Grotesk', sans-serif; font-size: 48px; font-weight: 700; line-height: 1.05; letter-spacing: -0.5px; margin-bottom: 16px; }
+.text h1 .accent { color: #4187e1; }
+.text .sub { font-family: 'Space Mono', monospace; font-size: 12px; color: #6a8bae; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px; }
+.text p { font-size: 15px; line-height: 1.7; color: #8aabbe; margin-bottom: 32px; max-width: 460px; }
+
+.cta { display: inline-flex; align-items: center; gap: 8px; background: #4187e1; color: #0d1b2a; padding: 12px 28px; font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 600; text-decoration: none; border: none; cursor: pointer; }
+.cta:hover { background: #5a9ef5; }
+
+.blueprint-card { background: rgba(13,27,42,0.8); border: 1px solid rgba(65,135,225,0.25); padding: 28px; position: relative; }
+.blueprint-card::before { content: ''; position: absolute; top: -1px; left: -1px; right: -1px; height: 2px; background: linear-gradient(90deg, #4187e1, transparent); }
+.bp-header { font-family: 'Space Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: #4187e1; margin-bottom: 16px; }
+.bp-drawing { display: flex; flex-direction: column; gap: 20px; }
+.bp-row { display: flex; align-items: center; gap: 12px; }
+.bp-label { font-family: 'Space Mono', monospace; font-size: 9px; text-transform: uppercase; letter-spacing: 0.5px; color: #6a8bae; width: 100px; }
+.bp-bar { height: 24px; background: rgba(65,135,225,0.1); border: 1px solid rgba(65,135,225,0.3); position: relative; flex: 1; }
+.bp-fill { height: 100%; background: #4187e1; }
+.bp-value { font-family: 'Space Mono', monospace; font-size: 11px; color: #e0e7ef; width: 40px; text-align: right; }
+
+.bp-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(65,135,225,0.15); }
+.bp-metric { text-align: center; }
+.bp-num { font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #4187e1; }
+.bp-desc { font-family: 'Space Mono', monospace; font-size: 9px; text-transform: uppercase; letter-spacing: 1px; color: #6a8bae; margin-top: 4px; }
+
+.tag { display: inline-block; background: rgba(65,135,225,0.1); border: 1px solid rgba(65,135,225,0.2); padding: 4px 12px; font-family: 'Space Mono', monospace; font-size: 10px; letter-spacing: 1px; margin-bottom: 20px; }
+
+@media (max-width: 768px) {
+  .content { grid-template-columns: 1fr; gap: 40px; }
+  .text h1 { font-size: 32px; }
+  .nav { display: none; }
+}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="grid-lines"></div>
+  <div class="header">
+    <div class="logo">Score<span>Lift</span></div>
+    <div class="nav">
+      <a href="#">How It Works</a>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Calculators</a>
+    </div>
+  </div>
+  <div class="content">
+    <div class="text">
+      <div class="sub">Phase 1 · Credit Assessment</div>
+      <h1>Build your credit <span class="accent">by design.</span></h1>
+      <p>A measured, structural approach to credit improvement. We provide the blueprint — you supply the data. Every action is prioritised by impact and sequenced for maximum results.</p>
+      <a class="cta" href="#">Start the build →</a>
+    </div>
+    <div class="blueprint-card">
+      <div class="bp-header">▣ Estimated Score · 642 (Fair)</div>
+      <div class="bp-drawing">
+        <div class="bp-row"><span class="bp-label">Payment History</span><div class="bp-bar"><div class="bp-fill" style="width:78%"></div></div><span class="bp-value">78%</span></div>
+        <div class="bp-row"><span class="bp-label">Utilisation</span><div class="bp-bar"><div class="bp-fill" style="width:42%"></div></div><span class="bp-value">42% ↓</span></div>
+        <div class="bp-row"><span class="bp-label">Account Age</span><div class="bp-bar"><div class="bp-fill" style="width:55%"></div></div><span class="bp-value">55%</span></div>
+        <div class="bp-row"><span class="bp-label">Credit Mix</span><div class="bp-bar"><div class="bp-fill" style="width:33%"></div></div><span class="bp-value">33% ↑</span></div>
+      </div>
+      <div class="bp-metrics">
+        <div class="bp-metric"><div class="bp-num">+42</div><div class="bp-desc">Estimated Upside</div></div>
+        <div class="bp-metric"><div class="bp-num">3</div><div class="bp-desc">Priority Actions</div></div>
+        <div class="bp-metric"><div class="bp-num">6 mo</div><div class="bp-desc">Target Horizon</div></div>
+        <div class="bp-metric"><div class="bp-num">$0</div><div class="bp-desc">Upfront Cost</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

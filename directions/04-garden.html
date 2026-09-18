@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ScoreLift · Direction 4 · Garden</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet" />
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #faf8f2; color: #2d3a2a; font-family: 'DM Sans', sans-serif; }
+
+.hero { max-width: 1200px; margin: 0 auto; padding: 48px 40px; position: relative; overflow: hidden; }
+.hero::before { content: ''; position: absolute; bottom: -120px; right: -80px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(74,124,89,0.08) 0%, transparent 70%); }
+.hero::after { content: '🌱'; position: absolute; bottom: 40px; right: 80px; font-size: 80px; opacity: 0.12; }
+
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 72px; }
+.logo { font-family: 'DM Serif Display', serif; font-size: 24px; font-weight: 400; letter-spacing: -0.5px; }
+.logo span { color: #4a7c59; }
+.nav { display: flex; gap: 28px; font-size: 14px; color: #6a7a65; }
+.nav a { color: inherit; text-decoration: none; }
+.nav a:hover { color: #4a7c59; }
+
+.content { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.text h1 { font-family: 'DM Serif Display', serif; font-size: 48px; font-weight: 400; line-height: 1.1; letter-spacing: -0.5px; margin-bottom: 20px; }
+.text h1 i { font-style: italic; color: #4a7c59; }
+.text p { font-size: 16px; line-height: 1.7; color: #6a7a65; margin-bottom: 32px; max-width: 440px; }
+
+.cta { display: inline-block; background: #4a7c59; color: #faf8f2; padding: 14px 32px; font-size: 15px; font-weight: 500; text-decoration: none; border: none; cursor: pointer; border-radius: 6px; }
+.cta:hover { background: #3d6b4d; }
+
+.garden-card { background: #fff; border-radius: 16px; padding: 32px; box-shadow: 0 2px 24px rgba(74,124,89,0.08); }
+.garden-score { display: flex; align-items: center; gap: 20px; margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid #e8e6dd; }
+.garden-num { font-family: 'DM Serif Display', serif; font-size: 52px; line-height: 1; color: #4a7c59; }
+.garden-num small { font-size: 18px; color: #8a9a85; }
+.garden-detail { }
+.garden-band { font-size: 14px; font-weight: 500; margin-bottom: 4px; }
+.garden-band .tag { display: inline-block; background: #eaf0e8; padding: 2px 10px; border-radius: 12px; font-size: 12px; color: #4a7c59; margin-left: 8px; }
+.garden-date { font-size: 13px; color: #8a9a85; }
+
+.garden-factors { display: grid; gap: 12px; }
+.factor { display: flex; align-items: center; gap: 12px; }
+.factor-icon { width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; }
+.factor-icon.good { background: #eaf0e8; }
+.factor-icon.neutral { background: #f5f0e0; }
+.factor-icon.needs { background: #fae8e8; }
+.factor-text { flex: 1; }
+.factor-name { font-size: 13px; font-weight: 500; }
+.factor-status { font-size: 11px; color: #8a9a85; }
+.factor-dot { width: 8px; height: 8px; border-radius: 50%; }
+.factor-dot.good { background: #4a7c59; }
+.factor-dot.neutral { background: #d4a843; }
+.factor-dot.needs { background: #c0392b; }
+
+@media (max-width: 768px) {
+  .content { grid-template-columns: 1fr; gap: 40px; }
+  .text h1 { font-size: 34px; }
+  .nav { display: none; }
+}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="header">
+    <div class="logo">Score<span>Lift</span></div>
+    <div class="nav">
+      <a href="#">How It Works</a>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Calculators</a>
+    </div>
+  </div>
+  <div class="content">
+    <div class="text">
+      <h1>Grow your credit <i>where it's planted.</i></h1>
+      <p>Credit improvement isn't a quick fix — it's a garden you tend. ScoreLift shows you exactly which areas need water, which need pruning, and what to plant next. All self-reported, all transparent.</p>
+      <a class="cta" href="#">Start growing →</a>
+    </div>
+    <div class="garden-card">
+      <div class="garden-score">
+        <div class="garden-num">642 <small>/ 850</small></div>
+        <div class="garden-detail">
+          <div class="garden-band">Fair <span class="tag">▲ +18 this month</span></div>
+          <div class="garden-date">Last tended · 2 days ago</div>
+        </div>
+      </div>
+      <div class="garden-factors">
+        <div class="factor"><div class="factor-icon good">✓</div><div class="factor-text"><div class="factor-name">Payment History</div><div class="factor-status">On track — no missed payments</div></div><div class="factor-dot good"></div></div>
+        <div class="factor"><div class="factor-icon needs">!</div><div class="factor-text"><div class="factor-name">Credit Utilisation</div><div class="factor-status">Needs attention — 31% used</div></div><div class="factor-dot needs"></div></div>
+        <div class="factor"><div class="factor-icon neutral">~</div><div class="factor-text"><div class="factor-name">Account Age</div><div class="factor-status">Average — 4 years</div></div><div class="factor-dot neutral"></div></div>
+        <div class="factor"><div class="factor-icon good">✓</div><div class="factor-text"><div class="factor-name">Credit Mix</div><div class="factor-status">Good — 3 account types</div></div><div class="factor-dot good"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

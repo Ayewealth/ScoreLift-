@@ -9,13 +9,12 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      // Resolved by Vite for client code; tsconfig paths covers type-checking
       '@shared': path.resolve(__dirname, 'shared'),
+      '@': path.resolve(__dirname, 'client/src'),
     },
   },
   build: {
     outDir: 'dist/client',
     emptyOutDir: true,
   },
-  // No proxy needed — Vite runs as Express middleware in development
 })

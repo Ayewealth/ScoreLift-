@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ScoreLift · Garden · Font Comparison</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@400;600;700;800&family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,600;6..72,700&family=IBM+Plex+Sans:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&family=Literata:opsz,wght@7..72,400;7..72,600;7..72,700&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #faf8f2; padding: 40px; }
+
+.intro { max-width: 700px; margin-bottom: 48px; }
+.intro h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 8px; }
+.intro p { font-size: 14px; color: #6a7a65; line-height: 1.6; }
+.intro .alert { background: #fff3cd; border: 1px solid #ffc107; padding: 12px 16px; border-radius: 6px; font-size: 13px; margin-top: 16px; color: #664d03; }
+
+.variant { background: #fff; border: 1px solid #e8e6dd; border-radius: 12px; padding: 32px; margin-bottom: 24px; max-width: 1100px; }
+.variant-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid #e8e6dd; }
+.variant-name { font-size: 18px; font-weight: 600; }
+.variant-fonts { font-size: 12px; color: #8a9a85; }
+
+.hero-sample { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: center; }
+.text h1 { font-size: 36px; line-height: 1.1; margin-bottom: 14px; letter-spacing: -0.5px; }
+.text h1 i { font-style: italic; color: #4a7c59; }
+.text p { font-size: 14px; line-height: 1.6; color: #6a7a65; margin-bottom: 20px; }
+.cta { display: inline-block; background: #4a7c59; color: #faf8f2; padding: 12px 28px; font-size: 14px; font-weight: 500; text-decoration: none; border-radius: 6px; }
+
+.sample-card { background: #faf8f2; border-radius: 12px; padding: 24px; }
+.sample-score { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid #e8e6dd; }
+.sample-num { font-size: 44px; line-height: 1; color: #4a7c59; }
+.sample-num small { font-size: 16px; color: #8a9a85; }
+.sample-band { font-size: 13px; font-weight: 500; }
+.sample-band .tag { display: inline-block; background: #eaf0e8; padding: 2px 8px; border-radius: 10px; font-size: 11px; color: #4a7c59; margin-left: 6px; }
+.sample-date { font-size: 12px; color: #8a9a85; }
+.sample-factors { display: grid; gap: 8px; }
+.sf-row { display: flex; align-items: center; gap: 10px; }
+.sf-icon { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; }
+.sf-icon.good { background: #eaf0e8; }
+.sf-icon.needs { background: #fae8e8; }
+.sf-icon.neutral { background: #f5f0e0; }
+.sf-text { flex: 1; }
+.sf-name { font-size: 12px; font-weight: 500; }
+.sf-status { font-size: 10px; color: #8a9a85; }
+.sf-dot { width: 7px; height: 7px; border-radius: 50%; }
+.sf-dot.good { background: #4a7c59; }
+.sf-dot.needs { background: #c0392b; }
+.sf-dot.neutral { background: #d4a843; }
+
+@media (max-width: 768px) {
+  .hero-sample { grid-template-columns: 1fr; gap: 24px; }
+  .text h1 { font-size: 28px; }
+}
+</style>
+</head>
+<body>
+
+<div class="intro">
+  <h1>ScoreLift · Garden Direction · Font Comparison</h1>
+  <p>Same layout, same green palette — only the font pair changes. Each section below uses a different combination. Open this page in a browser with internet access; fonts load from Google Fonts.</p>
+  <div class="alert">⚠️ If the text in all sections looks the same (the browser's fallback font), fonts are not loading. Try opening this page in Chrome or Firefox with an internet connection. Each section header shows which two fonts should appear.</div>
+</div>
+
+<div class="variant" style="font-family: 'DM Sans', sans-serif;">
+  <div class="variant-header">
+    <span class="variant-name">1. DM Serif Display + DM Sans</span>
+    <span class="variant-fonts">Original choice</span>
+  </div>
+  <div class="hero-sample">
+    <div class="text" style="font-family: 'DM Sans', sans-serif;">
+      <h1 style="font-family: 'DM Serif Display', serif;">Grow your credit <i>where it's planted.</i></h1>
+      <p>Credit improvement isn't a quick fix — it's a garden you tend. ScoreLift shows you exactly which areas need water, which need pruning, and what to plant next. All self-reported, all transparent.</p>
+      <a class="cta" href="#" style="font-family: 'DM Sans', sans-serif;">Start growing →</a>
+    </div>
+    <div class="sample-card" style="font-family: 'DM Sans', sans-serif;">
+      <div class="sample-score">
+        <div class="sample-num" style="font-family: 'DM Serif Display', serif;">642 <small>/ 850</small></div>
+        <div><div class="sample-band">Fair <span class="tag">▲ +18</span></div><div class="sample-date">2 days ago</div></div>
+      </div>
+      <div class="sample-factors">
+        <div class="sf-row"><div class="sf-icon good">✓</div><div class="sf-text"><div class="sf-name">Payment History</div><div class="sf-status">On track</div></div><div class="sf-dot good"></div></div>
+        <div class="sf-row"><div class="sf-icon needs">!</div><div class="sf-text"><div class="sf-name">Credit Utilisation</div><div class="sf-status">31% used</div></div><div class="sf-dot needs"></div></div>
+        <div class="sf-row"><div class="sf-icon neutral">~</div><div class="sf-text"><div class="sf-name">Account Age</div><div class="sf-status">4 years</div></div><div class="sf-dot neutral"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="variant" style="font-family: 'Inter', sans-serif;">
+  <div class="variant-header">
+    <span class="variant-name">2. Playfair Display + Inter</span>
+    <span class="variant-fonts">Classic serif · neutral sans</span>
+  </div>
+  <div class="hero-sample">
+    <div class="text" style="font-family: 'Inter', sans-serif;">
+      <h1 style="font-family: 'Playfair Display', serif;">Grow your credit <i>where it's planted.</i></h1>
+      <p>Credit improvement isn't a quick fix — it's a garden you tend. ScoreLift shows you exactly which areas need water, which need pruning, and what to plant next. All self-reported, all transparent.</p>
+      <a class="cta" href="#" style="font-family: 'Inter', sans-serif;">Start growing →</a>
+    </div>
+    <div class="sample-card" style="font-family: 'Inter', sans-serif;">
+      <div class="sample-score">
+        <div class="sample-num" style="font-family: 'Playfair Display', serif;">642 <small>/ 850</small></div>
+        <div><div class="sample-band">Fair <span class="tag">▲ +18</span></div><div class="sample-date">2 days ago</div></div>
+      </div>
+      <div class="sample-factors">
+        <div class="sf-row"><div class="sf-icon good">✓</div><div class="sf-text"><div class="sf-name">Payment History</div><div class="sf-status">On track</div></div><div class="sf-dot good"></div></div>
+        <div class="sf-row"><div class="sf-icon needs">!</div><div class="sf-text"><div class="sf-name">Credit Utilisation</div><div class="sf-status">31% used</div></div><div class="sf-dot needs"></div></div>
+        <div class="sf-row"><div class="sf-icon neutral">~</div><div class="sf-text"><div class="sf-name">Account Age</div><div class="sf-status">4 years</div></div><div class="sf-dot neutral"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="variant" style="font-family: 'Work Sans', sans-serif;">
+  <div class="variant-header">
+    <span class="variant-name">3. Fraunces + Work Sans</span>
+    <span class="variant-fonts">Expressive variable serif · clean sans</span>
+  </div>
+  <div class="hero-sample">
+    <div class="text" style="font-family: 'Work Sans', sans-serif;">
+      <h1 style="font-family: 'Fraunces', serif;">Grow your credit <i>where it's planted.</i></h1>
+      <p>Credit improvement isn't a quick fix — it's a garden you tend. ScoreLift shows you exactly which areas need water, which need pruning, and what to plant next. All self-reported, all transparent.</p>
+      <a class="cta" href="#" style="font-family: 'Work Sans', sans-serif;">Start growing →</a>
+    </div>
+    <div class="sample-card" style="font-family: 'Work Sans', sans-serif;">
+      <div class="sample-score">
+        <div class="sample-num" style="font-family: 'Fraunces', serif;">642 <small>/ 850</small></div>
+        <div><div class="sample-band">Fair <span class="tag">▲ +18</span></div><div class="sample-date">2 days ago</div></div>
+      </div>
+      <div class="sample-factors">
+        <div class="sf-row"><div class="sf-icon good">✓</div><div class="sf-text"><div class="sf-name">Payment History</div><div class="sf-status">On track</div></div><div class="sf-dot good"></div></div>
+        <div class="sf-row"><div class="sf-icon needs">!</div><div class="sf-text"><div class="sf-name">Credit Utilisation</div><div class="sf-status">31% used</div></div><div class="sf-dot needs"></div></div>
+        <div class="sf-row"><div class="sf-icon neutral">~</div><div class="sf-text"><div class="sf-name">Account Age</div><div class="sf-status">4 years</div></div><div class="sf-dot neutral"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="variant" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+  <div class="variant-header">
+    <span class="variant-name">4. Lora + Plus Jakarta Sans</span>
+    <span class="variant-fonts">Readable serif · rounded modern sans</span>
+  </div>
+  <div class="hero-sample">
+    <div class="text" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+      <h1 style="font-family: 'Lora', serif;">Grow your credit <i>where it's planted.</i></h1>
+      <p>Credit improvement isn't a quick fix — it's a garden you tend. ScoreLift shows you exactly which areas need water, which need pruning, and what to plant next. All self-reported, all transparent.</p>
+      <a class="cta" href="#" style="font-family: 'Plus Jakarta Sans', sans-serif;">Start growing →</a>
+    </div>
+    <div class="sample-card" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+      <div class="sample-score">
+        <div class="sample-num" style="font-family: 'Lora', serif;">642 <small>/ 850</small></div>
+        <div><div class="sample-band">Fair <span class="tag">▲ +18</span></div><div class="sample-date">2 days ago</div></div>
+      </div>
+      <div class="sample-factors">
+        <div class="sf-row"><div class="sf-icon good">✓</div><div class="sf-text"><div class="sf-name">Payment History</div><div class="sf-status">On track</div></div><div class="sf-dot good"></div></div>
+        <div class="sf-row"><div class="sf-icon needs">!</div><div class="sf-text"><div class="sf-name">Credit Utilisation</div><div class="sf-status">31% used</div></div><div class="sf-dot needs"></div></div>
+        <div class="sf-row"><div class="sf-icon neutral">~</div><div class="sf-text"><div class="sf-name">Account Age</div><div class="sf-status">4 years</div></div><div class="sf-dot neutral"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="variant" style="font-family: 'Manrope', sans-serif;">
+  <div class="variant-header">
+    <span class="variant-name">5. Syne + Manrope</span>
+    <span class="variant-fonts">Geometric display · versatile sans</span>
+  </div>
+  <div class="hero-sample">
+    <div class="text" style="font-family: 'Manrope', sans-serif;">
+      <h1 style="font-family: 'Syne', sans-serif;">Grow your credit <i>where it's planted.</i></h1>
+      <p>Credit improvement isn't a quick fix — it's a garden you tend. ScoreLift shows you exactly which areas need water, which need pruning, and what to plant next. All self-reported, all transparent.</p>
+      <a class="cta" href="#" style="font-family: 'Manrope', sans-serif;">Start growing →</a>
+    </div>
+    <div class="sample-card" style="font-family: 'Manrope', sans-serif;">
+      <div class="sample-score">
+        <div class="sample-num" style="font-family: 'Syne', sans-serif;">642 <small>/ 850</small></div>
+        <div><div class="sample-band">Fair <span class="tag">▲ +18</span></div><div class="sample-date">2 days ago</div></div>
+      </div>
+      <div class="sample-factors">
+        <div class="sf-row"><div class="sf-icon good">✓</div><div class="sf-text"><div class="sf-name">Payment History</div><div class="sf-status">On track</div></div><div class="sf-dot good"></div></div>
+        <div class="sf-row"><div class="sf-icon needs">!</div><div class="sf-text"><div class="sf-name">Credit Utilisation</div><div class="sf-status">31% used</div></div><div class="sf-dot needs"></div></div>
+        <div class="sf-row"><div class="sf-icon neutral">~</div><div class="sf-text"><div class="sf-name">Account Age</div><div class="sf-status">4 years</div></div><div class="sf-dot neutral"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="variant" style="font-family: 'IBM Plex Sans', sans-serif;">
+  <div class="variant-header">
+    <span class="variant-name">6. Newsreader + IBM Plex Sans</span>
+    <span class="variant-fonts">Editorial serif · humanist sans</span>
+  </div>
+  <div class="hero-sample">
+    <div class="text" style="font-family: 'IBM Plex Sans', sans-serif;">
+      <h1 style="font-family: 'Newsreader', serif;">Grow your credit <i>where it's planted.</i></h1>
+      <p>Credit improvement isn't a quick fix — it's a garden you tend. ScoreLift shows you exactly which areas need water, which need pruning, and what to plant next. All self-reported, all transparent.</p>
+      <a class="cta" href="#" style="font-family: 'IBM Plex Sans', sans-serif;">Start growing →</a>
+    </div>
+    <div class="sample-card" style="font-family: 'IBM Plex Sans', sans-serif;">
+      <div class="sample-score">
+        <div class="sample-num" style="font-family: 'Newsreader', serif;">642 <small>/ 850</small></div>
+        <div><div class="sample-band">Fair <span class="tag">▲ +18</span></div><div class="sample-date">2 days ago</div></div>
+      </div>
+      <div class="sample-factors">
+        <div class="sf-row"><div class="sf-icon good">✓</div><div class="sf-text"><div class="sf-name">Payment History</div><div class="sf-status">On track</div></div><div class="sf-dot good"></div></div>
+        <div class="sf-row"><div class="sf-icon needs">!</div><div class="sf-text"><div class="sf-name">Credit Utilisation</div><div class="sf-status">31% used</div></div><div class="sf-dot needs"></div></div>
+        <div class="sf-row"><div class="sf-icon neutral">~</div><div class="sf-text"><div class="sf-name">Account Age</div><div class="sf-status">4 years</div></div><div class="sf-dot neutral"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="variant" style="font-family: 'Outfit', sans-serif;">
+  <div class="variant-header">
+    <span class="variant-name">7. Cormorant Garamond + Outfit</span>
+    <span class="variant-fonts">Elegant French serif · minimalist sans</span>
+  </div>
+  <div class="hero-sample">
+    <div class="text" style="font-family: 'Outfit', sans-serif;">
+      <h1 style="font-family: 'Cormorant Garamond', serif;">Grow your credit <i>where it's planted.</i></h1>
+      <p>Credit improvement isn't a quick fix — it's a garden you tend. ScoreLift shows you exactly which areas need water, which need pruning, and what to plant next. All self-reported, all transparent.</p>
+      <a class="cta" href="#" style="font-family: 'Outfit', sans-serif;">Start growing →</a>
+    </div>
+    <div class="sample-card" style="font-family: 'Outfit', sans-serif;">
+      <div class="sample-score">
+        <div class="sample-num" style="font-family: 'Cormorant Garamond', serif;">642 <small>/ 850</small></div>
+        <div><div class="sample-band">Fair <span class="tag">▲ +18</span></div><div class="sample-date">2 days ago</div></div>
+      </div>
+      <div class="sample-factors">
+        <div class="sf-row"><div class="sf-icon good">✓</div><div class="sf-text"><div class="sf-name">Payment History</div><div class="sf-status">On track</div></div><div class="sf-dot good"></div></div>
+        <div class="sf-row"><div class="sf-icon needs">!</div><div class="sf-text"><div class="sf-name">Credit Utilisation</div><div class="sf-status">31% used</div></div><div class="sf-dot needs"></div></div>
+        <div class="sf-row"><div class="sf-icon neutral">~</div><div class="sf-text"><div class="sf-name">Account Age</div><div class="sf-status">4 years</div></div><div class="sf-dot neutral"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="variant" style="font-family: 'Sora', sans-serif;">
+  <div class="variant-header">
+    <span class="variant-name">8. Literata + Sora</span>
+    <span class="variant-fonts">Bookish serif · understated sans</span>
+  </div>
+  <div class="hero-sample">
+    <div class="text" style="font-family: 'Sora', sans-serif;">
+      <h1 style="font-family: 'Literata', serif;">Grow your credit <i>where it's planted.</i></h1>
+      <p>Credit improvement isn't a quick fix — it's a garden you tend. ScoreLift shows you exactly which areas need water, which need pruning, and what to plant next. All self-reported, all transparent.</p>
+      <a class="cta" href="#" style="font-family: 'Sora', sans-serif;">Start growing →</a>
+    </div>
+    <div class="sample-card" style="font-family: 'Sora', sans-serif;">
+      <div class="sample-score">
+        <div class="sample-num" style="font-family: 'Literata', serif;">642 <small>/ 850</small></div>
+        <div><div class="sample-band">Fair <span class="tag">▲ +18</span></div><div class="sample-date">2 days ago</div></div>
+      </div>
+      <div class="sample-factors">
+        <div class="sf-row"><div class="sf-icon good">✓</div><div class="sf-text"><div class="sf-name">Payment History</div><div class="sf-status">On track</div></div><div class="sf-dot good"></div></div>
+        <div class="sf-row"><div class="sf-icon needs">!</div><div class="sf-text"><div class="sf-name">Credit Utilisation</div><div class="sf-status">31% used</div></div><div class="sf-dot needs"></div></div>
+        <div class="sf-row"><div class="sf-icon neutral">~</div><div class="sf-text"><div class="sf-name">Account Age</div><div class="sf-status">4 years</div></div><div class="sf-dot neutral"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

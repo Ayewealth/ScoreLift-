@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Outfit:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 45 40% 96%;
+    --foreground: 105 16% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 105 16% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 105 16% 20%;
+    --primary: 145 25% 39%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 105 21% 93%;
+    --secondary-foreground: 105 16% 20%;
+    --muted: 105 10% 44%;
+    --muted-foreground: 105 10% 44%;
+    --accent: 105 21% 93%;
+    --accent-foreground: 105 16% 20%;
+    --destructive: 6 65% 46%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 44 19% 89%;
+    --input: 44 19% 89%;
+    --ring: 145 25% 39%;
+    --radius: 0.75rem;
+    --amber: 42 62% 55%;
+    --sage: 105 10% 44%;
+    --moss: 105 21% 93%;
+    --sand: 43 41% 92%;
+    --rose: 0 57% 95%;
+  }
+
+  .dark {
+    --background: 105 16% 10%;
+    --foreground: 45 40% 96%;
+    --card: 105 16% 14%;
+    --card-foreground: 45 40% 96%;
+    --popover: 105 16% 14%;
+    --popover-foreground: 45 40% 96%;
+    --primary: 145 25% 50%;
+    --primary-foreground: 105 16% 10%;
+    --secondary: 105 16% 20%;
+    --secondary-foreground: 45 40% 96%;
+    --muted: 105 10% 44%;
+    --muted-foreground: 105 10% 60%;
+    --accent: 105 16% 20%;
+    --accent-foreground: 45 40% 96%;
+    --destructive: 6 65% 46%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 105 16% 20%;
+    --input: 105 16% 20%;
+    --ring: 145 25% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Outfit', sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', serif;
+  }
+}

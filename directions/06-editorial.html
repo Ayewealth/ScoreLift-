@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ScoreLift · Direction 6 · Editorial</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #fcfaf5; color: #1c1c1c; font-family: 'Work Sans', sans-serif; }
+
+.hero { max-width: 1280px; margin: 0 auto; padding: 48px 40px 0; }
+
+.header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 32px; border-bottom: 1px solid #e0ddd5; margin-bottom: 80px; }
+.logo { font-family: 'Playfair Display', serif; font-size: 26px; font-weight: 700; font-style: italic; }
+.logo span { color: #b8543c; }
+.nav { display: flex; gap: 24px; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #6a6a6a; }
+.nav a { color: inherit; text-decoration: none; }
+.nav a:hover { color: #b8543c; }
+
+.content { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; }
+.text h1 { font-family: 'Playfair Display', serif; font-size: 56px; font-weight: 700; line-height: 1.05; letter-spacing: -1px; margin-bottom: 24px; }
+.text h1 .accent { color: #b8543c; font-style: italic; }
+.text .lead { font-size: 17px; line-height: 1.6; color: #4a4a4a; margin-bottom: 32px; max-width: 500px; font-weight: 300; }
+
+.cta { display: inline-block; background: #1c1c1c; color: #fcfaf5; padding: 14px 36px; font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 2px; text-decoration: none; border: none; cursor: pointer; }
+.cta:hover { background: #b8543c; }
+
+.editorial-card { border-left: 3px solid #b8543c; padding-left: 24px; }
+.editorial-card .kicker { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: #b8543c; margin-bottom: 12px; }
+.editorial-card .quote { font-family: 'Playfair Display', serif; font-size: 22px; font-style: italic; line-height: 1.4; color: #4a4a4a; margin-bottom: 20px; }
+.editorial-card .attribution { font-size: 12px; color: #8a8a8a; }
+
+.factors { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 32px; }
+.factor-item { border-top: 1px solid #e0ddd5; padding-top: 12px; }
+.fi-name { font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: #8a8a8a; margin-bottom: 4px; }
+.fi-bar { height: 4px; background: #e0ddd5; border-radius: 2px; margin-bottom: 4px; overflow: hidden; }
+.fi-bar-fill { height: 100%; background: #1c1c1c; border-radius: 2px; }
+.fi-status { font-size: 12px; font-weight: 500; }
+
+.pullquote { font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 400; font-style: italic; line-height: 1.15; color: #1c1c1c; margin-top: 60px; padding-top: 40px; border-top: 1px solid #e0ddd5; max-width: 600px; }
+.pullquote .attr { font-family: 'Work Sans', sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; font-style: normal; color: #8a8a8a; margin-top: 16px; }
+
+@media (max-width: 768px) {
+  .content { grid-template-columns: 1fr; }
+  .text h1 { font-size: 34px; }
+  .nav { display: none; }
+  .factors { grid-template-columns: 1fr; }
+  .pullquote { font-size: 24px; }
+}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="header">
+    <div class="logo">Score<span>Lift</span></div>
+    <div class="nav">
+      <a href="#">How It Works</a>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Calculators</a>
+    </div>
+  </div>
+  <div class="content">
+    <div class="text">
+      <h1>Credit <span class="accent">unlocked.</span></h1>
+      <p class="lead">The average person spends 11 years trying to improve their credit score without a clear plan. ScoreLift replaces guesswork with a transparent, prioritised, monthly roadmap — grounded in deterministic rules, not algorithms.</p>
+      <a class="cta" href="#">Read the methodology →</a>
+    </div>
+    <div>
+      <div class="editorial-card">
+        <div class="kicker">Current Assessment</div>
+        <div class="quote">"Fair (642). On track to reach Good within 6 months based on current trajectory."</div>
+        <div class="attribution">— ScoreLift Deterministic Engine</div>
+      </div>
+      <div class="factors">
+        <div class="factor-item"><div class="fi-name">Payment History</div><div class="fi-bar"><div class="fi-bar-fill" style="width:78%"></div></div><div class="fi-status" style="color:#22c55e">Strong</div></div>
+        <div class="factor-item"><div class="fi-name">Utilisation</div><div class="fi-bar"><div class="fi-bar-fill" style="width:42%"></div></div><div class="fi-status" style="color:#eab308">Needs work</div></div>
+        <div class="factor-item"><div class="fi-name">Account Age</div><div class="fi-bar"><div class="fi-bar-fill" style="width:55%"></div></div><div class="fi-status" style="color:#eab308">Average</div></div>
+        <div class="factor-item"><div class="fi-name">New Inquiries</div><div class="fi-bar"><div class="fi-bar-fill" style="width:90%"></div></div><div class="fi-status" style="color:#22c55e">Low</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="pullquote">"The credit industry wants you to believe your score is mysterious. We built ScoreLift to prove it isn't."<div class="attr">— The ScoreLift Approach</div></div>
+</div>
+</body>
+</html>
