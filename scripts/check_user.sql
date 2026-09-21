@@ -1,0 +1,1 @@
+SELECT email, email_verified FROM "user" WHERE email = 'ayewealth11@gmail.com';

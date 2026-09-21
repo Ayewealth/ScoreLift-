@@ -141,6 +141,7 @@ const faqs = [
 export default function FeaturesPage() {
   const heroRef = useRef<HTMLDivElement>(null)
   const featuresRef = useRef<HTMLDivElement>(null)
+  const screenshotsRef = useRef<HTMLDivElement>(null)
   const comparisonRef = useRef<HTMLDivElement>(null)
   const testimonialsRef = useRef<HTMLDivElement>(null)
   const faqRef = useRef<HTMLDivElement>(null)
@@ -163,6 +164,7 @@ export default function FeaturesPage() {
 
   useScrollReveal(featuresRef)
   useStaggerReveal(featuresRef, '.feature-card', { stagger: 0.1 })
+  useScrollReveal(screenshotsRef)
   useScrollReveal(comparisonRef)
   useScrollReveal(testimonialsRef)
   useStaggerReveal(testimonialsRef, '.testimonial-card', { stagger: 0.12 })
@@ -200,6 +202,73 @@ export default function FeaturesPage() {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section ref={screenshotsRef} className="border-t border-border bg-card py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="font-heading text-3xl text-foreground">
+              See it in action
+            </h2>
+            <p className="mt-2 font-body text-base text-muted-foreground">
+              Real screenshots from ScoreLift with demo data. Every module is fully functional.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div className="overflow-hidden rounded-xl border border-border bg-card shadow-[0_2px_24px_rgba(74,124,89,0.08)]">
+              <div className="flex items-center gap-1.5 border-b border-border bg-[#faf8f2] px-4 py-2">
+                <div className="size-2.5 rounded-full bg-[#e8d5b0]" />
+                <div className="size-2.5 rounded-full bg-[#c4b89a]" />
+                <div className="size-2.5 rounded-full bg-[#a8c4a0]" />
+                <span className="ml-2 text-xs text-muted-foreground">/dashboard</span>
+              </div>
+              <img src="/screenshot-dashboard.png" alt="Dashboard" className="w-full" loading="lazy" />
+            </div>
+            <div className="overflow-hidden rounded-xl border border-border bg-card shadow-[0_2px_24px_rgba(74,124,89,0.08)]">
+              <div className="flex items-center gap-1.5 border-b border-border bg-[#faf8f2] px-4 py-2">
+                <div className="size-2.5 rounded-full bg-[#e8d5b0]" />
+                <div className="size-2.5 rounded-full bg-[#c4b89a]" />
+                <div className="size-2.5 rounded-full bg-[#a8c4a0]" />
+                <span className="ml-2 text-xs text-muted-foreground">/roadmap</span>
+              </div>
+              <img src="/screenshot-roadmap.png" alt="Roadmap" className="w-full" loading="lazy" />
+            </div>
+            <div className="overflow-hidden rounded-xl border border-border bg-card shadow-[0_2px_24px_rgba(74,124,89,0.08)]">
+              <div className="flex items-center gap-1.5 border-b border-border bg-[#faf8f2] px-4 py-2">
+                <div className="size-2.5 rounded-full bg-[#e8d5b0]" />
+                <div className="size-2.5 rounded-full bg-[#c4b89a]" />
+                <div className="size-2.5 rounded-full bg-[#a8c4a0]" />
+                <span className="ml-2 text-xs text-muted-foreground">/simulator</span>
+              </div>
+              <img src="/screenshot-simulator.png" alt="Simulator" className="w-full" loading="lazy" />
+            </div>
+            <div className="overflow-hidden rounded-xl border border-border bg-card shadow-[0_2px_24px_rgba(74,124,89,0.08)]">
+              <div className="flex items-center gap-1.5 border-b border-border bg-[#faf8f2] px-4 py-2">
+                <div className="size-2.5 rounded-full bg-[#e8d5b0]" />
+                <div className="size-2.5 rounded-full bg-[#c4b89a]" />
+                <div className="size-2.5 rounded-full bg-[#a8c4a0]" />
+                <span className="ml-2 text-xs text-muted-foreground">/goals</span>
+              </div>
+              <img src="/screenshot-goals.png" alt="Goals" className="w-full" loading="lazy" />
+            </div>
+            <div className="overflow-hidden rounded-xl border border-border bg-card shadow-[0_2px_24px_rgba(74,124,89,0.08)]">
+              <div className="flex items-center gap-1.5 border-b border-border bg-[#faf8f2] px-4 py-2">
+                <div className="size-2.5 rounded-full bg-[#e8d5b0]" />
+                <div className="size-2.5 rounded-full bg-[#c4b89a]" />
+                <div className="size-2.5 rounded-full bg-[#a8c4a0]" />
+                <span className="ml-2 text-xs text-muted-foreground">/milestones</span>
+              </div>
+              <img src="/screenshot-milestones.png" alt="Milestones" className="w-full" loading="lazy" />
+            </div>
+          </div>
+
+          <div className="mt-8 text-center">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-1.5 text-xs font-medium text-primary shadow-sm border border-border">
+              All screenshots shown with demo data &middot; No real credit data exposed
+            </span>
           </div>
         </div>
       </section>

@@ -42,7 +42,7 @@ export function CheckinDigestEmail({ newScore, delta, streak, dashboardUrl }: Ch
 }
 
 const headingStyle: React.CSSProperties = {
-  fontFamily: "'Cormorant Garamond', Georgia, serif",
+  fontFamily: "'Space Grotesk', Arial, sans-serif",
   fontSize: '24px',
   fontWeight: 700,
   color: '#2d3a2a',

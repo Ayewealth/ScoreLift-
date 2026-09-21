@@ -81,9 +81,8 @@ const logoCellStyle = {
 }
 
 const logoTextStyle = {
-  fontFamily: "'Cormorant Garamond', Georgia, serif",
+  fontFamily: "'Space Grotesk', Arial, sans-serif",
   fontSize: '28px',
-  fontStyle: 'italic',
   fontWeight: 700,
   color: '#2d3a2a',
 }

@@ -32,7 +32,7 @@ export function MilestoneEmail({ badgeName, badgeDescription, milestonesUrl }: M
 }
 
 const headingStyle: React.CSSProperties = {
-  fontFamily: "'Cormorant Garamond', Georgia, serif",
+  fontFamily: "'Space Grotesk', Arial, sans-serif",
   fontSize: '24px',
   fontWeight: 700,
   color: '#2d3a2a',
@@ -56,7 +56,7 @@ const badgeStyle: React.CSSProperties = {
 }
 
 const badgeNameStyle: React.CSSProperties = {
-  fontFamily: "'Cormorant Garamond', Georgia, serif",
+  fontFamily: "'Space Grotesk', Arial, sans-serif",
   fontSize: '20px',
   fontWeight: 700,
   color: '#4a7c59',

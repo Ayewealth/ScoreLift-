@@ -5,7 +5,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        heading: ['Cormorant Garamond', 'serif'],
+        heading: ['Space Grotesk', 'sans-serif'],
         body: ['Outfit', 'sans-serif'],
       },
       colors: {

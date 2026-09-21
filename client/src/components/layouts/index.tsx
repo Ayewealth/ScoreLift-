@@ -18,6 +18,8 @@ import {
 export { AuthLayout } from './AuthLayout'
 
 export function PublicLayout() {
+  const { pathname } = useLocation()
+  useEffect(() => { window.scrollTo(0, 0) }, [pathname])
   return (
     <div className="flex min-h-screen flex-col">
       <PublicSiteHeader />
@@ -201,6 +203,8 @@ function PublicSiteFooter() {
 }
 
 export function VerifyEmailLayout() {
+  const { pathname } = useLocation()
+  useEffect(() => { window.scrollTo(0, 0) }, [pathname])
   return (
     <div className="flex min-h-screen items-center justify-center px-4">
       <Outlet />
@@ -209,6 +213,8 @@ export function VerifyEmailLayout() {
 }
 
 export function OnboardingLayout() {
+  const { pathname } = useLocation()
+  useEffect(() => { window.scrollTo(0, 0) }, [pathname])
   return (
     <div className="flex min-h-screen items-center justify-center px-4 lg:px-16">
       <Outlet />
@@ -223,6 +229,8 @@ export function AppShell() {
   const user = session?.user
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [avatarUrl, setAvatarUrl] = useState<string | null>(null)
+
+  useEffect(() => { window.scrollTo(0, 0) }, [location.pathname])
 
   useEffect(() => {
     if (user?.id) {

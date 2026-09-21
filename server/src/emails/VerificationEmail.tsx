@@ -35,7 +35,7 @@ export function VerificationEmail({ verificationUrl }: VerificationEmailProps) {
 }
 
 const headingStyle = {
-  fontFamily: "'Cormorant Garamond', Georgia, serif",
+  fontFamily: "'Space Grotesk', Arial, sans-serif",
   fontSize: '26px',
   fontWeight: 700,
   color: '#2d3a2a',

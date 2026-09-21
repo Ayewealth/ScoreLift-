@@ -12,13 +12,13 @@
 
 **THESIS.** ScoreLift replaces opaque credit-bureau math with transparent, self-reported, garden-like tending. The category default is sterile financial dashboard or urgent "fix your credit" red-alert design. This surface refuses both: it meets the visitor with warmth, steady progress, and the quiet authority of something that works — like a well-kept garden.
 
-**OWN-WORLD.** Palette: warm off-white ground (`#faf8f2`), forest green primary (`#4a7c59`), dark soil-green text (`#2d3a2a`), muted sage (`#6a7a65`), light moss tint (`#eaf0e8`), amber accent (`#d4a843`), red reserved exclusively for critical-factor alerts (`#c0392b`). Type: Cormorant Garamond (headlines, italic native, weights 400/600/700) + Outfit (body, weights 300/400/500/600). Corners: 12px on cards, 6px on buttons. Spacing: relaxed — generous whitespace above headings, tighter below, pacing that breathes.
+**OWN-WORLD.** Palette: warm off-white ground (`#faf8f2`), forest green primary (`#4a7c59`), dark soil-green text (`#2d3a2a`), muted sage (`#6a7a65`), light moss tint (`#eaf0e8`), amber accent (`#d4a843`), red reserved exclusively for critical-factor alerts (`#c0392b`). Type: Space Grotesk (headlines, weights 400/500/600/700) + Outfit (body, weights 300/400/500/600). Corners: 12px on cards, 6px on buttons. Spacing: relaxed — generous whitespace above headings, tighter below, pacing that breathes.
 
 **STORY.** A US adult with fair-to-good credit arrives worried their score is a black box. The hero tells them it isn't — in one italic line, "Grow your credit *where it's planted*." Below, a card shows a score of 642 with a clear band label (Fair) and a green delta (+18). Factor health indicators use garden-friendly icons (✓ good, ~ neutral, ! needs attention) — not red/yellow/green traffic lights. The visitor understands: this is a place that will explain, not intimidate.
 
-**FIRST VIEWPORT.** Left half: headline (52px Cormorant Garamond italic on green), sub-text (16px Outfit, sage), green CTA button. Right half: white card with score number (56px Cormorant Garamond), four factor rows with colored dot indicators. Background: off-white. A subtle leaf-like floating emoji (`🌱`, 80px, 12% opacity) sits in the bottom-right corner as an atmospheric marker. Header bar: ScoreLift logo in Cormorant Garamond with green "Lift", four nav links in Outfit sage.
+**FIRST VIEWPORT.** Left half: headline (52px Space Grotesk on green), sub-text (16px Outfit, sage), green CTA button. Right half: white card with score number (56px Space Grotesk), four factor rows with colored dot indicators. Background: off-white. A subtle leaf-like floating emoji (`🌱`, 80px, 12% opacity) sits in the bottom-right corner as an atmospheric marker. Header bar: ScoreLift logo in Space Grotesk with green "Lift", four nav links in Outfit sage.
 
-**FORM.** Position 4 (Garden/Growth) among the seven candidates presented to the user. Seed key: `garden-cormorant` — chosen variant 7 (Cormorant Garamond + Outfit) from the font iteration round.
+**FORM.** Position 4 (Garden/Growth) among the seven candidates presented to the user. Seed key: `garden-space-grotesk` — chosen variant Space Grotesk + Outfit from the font iteration round.
 
 **FINISH.** unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance.
 
@@ -45,11 +45,11 @@
 
 | Role | Face | Weight | Size | Style |
 |------|------|--------|------|-------|
-| Logo | Cormorant Garamond | 700 italic | 26px | — |
-| H1 | Cormorant Garamond | 700 | 52px | Italic on emphasized phrases |
-| H1 (mobile) | Cormorant Garamond | 700 | 34px | — |
-| Score number | Cormorant Garamond | 700 | 56px | — |
-| Small score | Cormorant Garamond | 400 | 20px | — |
+| Logo | Space Grotesk | 700 | 26px | — |
+| H1 | Space Grotesk | 700 | 52px | — |
+| H1 (mobile) | Space Grotesk | 700 | 34px | — |
+| Score number | Space Grotesk | 700 | 56px | — |
+| Small score | Space Grotesk | 400 | 20px | — |
 | Body | Outfit | 300/400 | 16px | — |
 | Nav | Outfit | 500 | 14px | — |
 | CTA button | Outfit | 500 | 15px | — |
@@ -75,7 +75,7 @@
 - **Buttons** — Forest green fill, Outfit 500, 14px/32px padding, 6px radius, hover darkens to `#3d6b4d`
 - **Factor indicators** — Circular 32px icons: green circle (good), yellow circle (neutral), red circle (needs attention)
 - **Status dots** — Small 8px circles: green/amber/red per factor health
-- **Score number** — Large Cormorant Garamond, forest green, with small gray fraction label
+- **Score number** — Large Space Grotesk, forest green, with small gray fraction label
 - **Divider** — 1px solid `#e8e6dd`
 
 ## Responsive
